@@ -2,7 +2,7 @@
 
 #  #スタバなう　
 
-Twitterの#スタバなうをVGG16を転移学習させて判別してみる）
+Twitterの#スタバなうをVGG16を転移学習させて判別してみる
 
 
 # DEMO
@@ -13,11 +13,12 @@ Twitterの#スタバなうをVGG16を転移学習させて判別してみる）
 
 # Requirement
 
-*Python3.X
-*tensorflow 2.0.0
-*Keras 2.3.1
-*Pillow 6.2.1
- 
+```bash
+Python3.X
+tensorflow 2.0.0
+Keras 2.3.1
+Pillow 6.2.1
+``` 
 
 # Installation
 
