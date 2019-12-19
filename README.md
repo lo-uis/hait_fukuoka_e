@@ -40,7 +40,7 @@ python demo.py
 
 # Note
 
-注意点などがあれば書く
+重みはここからDL→https://drive.google.com/open?id=16MmttlWDlqEvNuWJB1yoUIYjw7Ils_nc
 
 # Author
 
