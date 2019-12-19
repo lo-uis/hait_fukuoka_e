@@ -40,7 +40,7 @@ python demo.py
 
 # Note
 
-重みはここからDL→https://drive.google.com/open?id=16MmttlWDlqEvNuWJB1yoUIYjw7Ils_nc
+(重みはここからDL)[https://drive.google.com/open?id=16MmttlWDlqEvNuWJB1yoUIYjw7Ils_nc]
 
 # Author
 
