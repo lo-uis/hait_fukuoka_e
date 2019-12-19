@@ -3,10 +3,42 @@
 import os, re
 from flask import Flask, render_template, request, redirect, url_for, send_from_directory, session
 from werkzeug import secure_filename
+import numpy as np
+from tensorflow import keras
+from tensorflow.keras.models import Sequential, Model, load_model
+from PIL import Image
+import sys
 
+def predict (path) :
+    list_ = ["ramen","star"]
+    num = len(list_)
+    IMAGE_SIZE = 224
+
+    # convert data by specifying file from terminal
+    image = Image.open(path)
+    image = image.convert('RGB')
+    image = image.resize((IMAGE_SIZE, IMAGE_SIZE))
+    data = np.asarray(image,dtype=np.float32)
+
+    X = []
+    X.append(data)
+    X = np.array(X)
+
+    # load model
+    model = load_model('./vgg16_transfer.h5')
+
+    # estimated result of the first data (multiple scores will be returned)
+    result = model.predict([X])[0]
+    predicted = result.argmax()
+    percentage = int(result[predicted] * 100)
+
+    print(list_[predicted], percentage)
+
+    return list_[predicted]
 
 
 app = Flask(__name__)
+
 
 @app.route('/')
 def index():
@@ -43,14 +75,12 @@ def send():
             img_file.save(os.path.join(app.config['UPLOAD_FOLDER'], filename))
             img_url = '/uploads/' + filename
 
-            #判断結果
-            jg = "ramen"
+            jg = predict(img_url)
 
-            if jg == "star" :
+            if jg == star :
                 star_or_ramen = "この画像はスタバです"
-            elif jg == "ramen" :
+            elif jg == ramen:
                 star_or_ramen = "この画像はラーメンです"
-
 
 
             return render_template('index.html', img_url=img_url, kekka = star_or_ramen)
