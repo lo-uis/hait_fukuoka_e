@@ -1,25 +1,23 @@
 # hait_fukuoka_e
 
-# Name（リポジトリ/プロジェクト/OSSなどの名前）
+#  #スタバなう　
 
-分かりやすくてカッコイイ名前をつける（今回は"hoge"という名前をつける）
+Twitterの#スタバなうをVGG16を転移学習させて判別してみる）
 
-"hoge"が何かを簡潔に紹介する
 
 # DEMO
 
 "hoge"の魅力が直感的に伝えわるデモ動画や図解を載せる
 
-# Features
 
-"hoge"のセールスポイントや差別化などを説明する
 
 # Requirement
 
-"hoge"を動かすのに必要なライブラリなどを列挙する
-
-* huga 3.5.2
-* hogehuga 1.0.2
+*Python3.X
+*tensorflow 2.0.0
+*Keras 2.3.1
+*Pillow 6.2.1
+ 
 
 # Installation
 
