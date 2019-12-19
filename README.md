@@ -44,8 +44,9 @@ python demo.py
 
 # Author
 
-作成情報を列挙する
+
 [lo-uis](https://github.com/lo-uis)
+
 [joumoridaiki](https://github.com/joumoridaiki)
 
 # License
