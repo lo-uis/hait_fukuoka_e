@@ -3,27 +3,27 @@ import os, glob
 import numpy as np
 from sklearn import model_selection
 
-classes = ['ramen', 'star']
-num_classes = len(classes)
-IMAGE_SIZE = 224 # Specified size of VGG16 Default input size in VGG16
+##########################データセット要素定義#######################################
+list_ = ['ramen', 'star']　　　　　　　　　　　　　　　
+num = len(list_)
+##########################VGG16のサイズに合わせた####################################
+IMAGE_SIZE = 224 
 
-X = [] # image file
-Y = [] # correct label
+X = []  #画像格納用
+Y = []  #ラベル格納用
 
-for index, classlabel in enumerate(classes):
-    photo_dir = './data/' + classlabel
+for label, name in enumerate(list_):
+    dir = './data/' + name  #path指定                 
     files = glob.glob(photo_dir + '/*.jpg')
     for i, file in enumerate(files):
-        image = Image.open(file)
-        # standardize to 'RGB'
-        image = image.convert('RGB')
-        # to make image file all the same size
-        image = image.resize((IMAGE_SIZE, IMAGE_SIZE))
-        data = np.asarray(image)
-        print(data.shape)
-        data = data.astype("float32")
-        #data /= 255
-        X.append(data)
+        img = Image.open(file)
+        img = img.convert('RGB')
+        img = img.resize((IMAGE_SIZE, IMAGE_SIZE))
+        data_set = np.asarray(img)
+        print(data_set.shape)
+        data_set = data_set.astype("float32")
+        
+        X.append(data_set)
         Y.append(index)
 
 X = np.array(X)
