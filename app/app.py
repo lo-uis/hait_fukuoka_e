@@ -42,12 +42,20 @@ def send():
             filename = secure_filename(img_file.filename)
             img_file.save(os.path.join(app.config['UPLOAD_FOLDER'], filename))
             img_url = '/uploads/' + filename
-            
 
-            
-            return render_template('index.html', img_url=img_url)
-                
-        
+            #判断結果
+            jg = "ramen"
+
+            if jg == "star" :
+                star_or_ramen = "この画像はスタバです"
+            elif jg == "ramen" :
+                star_or_ramen = "この画像はラーメンです"
+
+
+
+            return render_template('index.html', img_url=img_url, kekka = star_or_ramen)
+
+
         else:
           return ''' <p>許可されていない拡張子です</p> '''
     else:
@@ -63,4 +71,3 @@ def uploaded_file(filename):
 ## おまじない
 if __name__ == "__main__":
     app.run(port=8000, debug=True)
-
