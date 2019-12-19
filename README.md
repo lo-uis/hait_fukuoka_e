@@ -15,17 +15,17 @@ Twitterの#スタバなうをVGG16を転移学習させて判別してみる
 
 ```bash
 Python3.X
-tensorflow 2.0.0
-Keras 2.3.1
-Pillow 6.2.1
 ``` 
 
 # Installation
 
-Requirementで列挙したライブラリなどのインストール方法を説明する
+
 
 ```bash
-pip install huga_package
+cd hoge
+git clone https://github.com/lo-uis/hait_fukuoka_e.git
+cd hait_fukuoka_e
+pip install requirement.txt
 ```
 
 # Usage
