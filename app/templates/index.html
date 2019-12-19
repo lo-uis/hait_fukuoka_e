@@ -1,14 +1,20 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
 <head>
-  <title>画像保存</title>
+ <meta charset="utf-8" />
+ <title>#スタバなう</title>
+ <style>
+ </style>
 </head>
+ 
 <body>
-  <form method="post" action="/send" enctype="multipart/form-data">
-            <input type="file" id="log_file" name="log_file" multiple="multiple">
-            <input type="submit" value="送信">
-          </form>
-
-  <img src = "{{img_path}}">
+<div style="margin-left:20%;">
+<h1>form (upload)</h1>
+<form method="POST" enctype="multipart/form-data">
+ <div><label>File1 <input type="file" name="file1" /></label></div>
+ <div><button type="submit">Submit</button></div>
+</form>
+<p>{{ message }}</p>
+</div>
 </body>
 </html>

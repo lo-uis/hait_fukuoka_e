@@ -1,14 +1,17 @@
-from flask import Flask,render_template
-
+from flask import Flask,request, render_template
+ 
+UPLOAD_DIR = "/Users/louis/product/data"
+ 
 app = Flask(__name__)
+ 
+@app.route('/', methods=['GET', 'POST'])
+def index() :
+  if request.method == 'POST' :
+    f = request.files['file1']
+    f.save(UPLOAD_DIR + f.filename)
+    return render_template('index.html', message='Uploaded ' + UPLOAD_DIR + f.filename)
+  else :
+    return render_template('index.html', message="")
 
-@app.route('/',methods = ['POST'])
-def send():
-    if request.method == 'POST':
-        res = request.files.getlist('log_file')
-        save_path = os.path.join(UPLOAD_FOLDER,res.filename)
-        res.save(save_path)
-        return render_template('index.html',img_path=save_path)
-
-if __name__ == "__main__":
+if __name__ == '__main__':
     app.run(port=8000, debug=True)
