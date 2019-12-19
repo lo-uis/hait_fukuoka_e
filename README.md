@@ -45,10 +45,8 @@ python demo.py
 # Author
 
 作成情報を列挙する
-
-* 作成者
-* 所属
-* E-mail
+[lo-uis](https://github.com/lo-uis)
+[joumoridaiki](https://github.com/joumoridaiki)
 
 # License
 ライセンスを明示する
