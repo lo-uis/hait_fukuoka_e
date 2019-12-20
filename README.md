@@ -7,7 +7,7 @@ Twitterの#スタバなうをVGG16を転移学習させて判別してみる
 
 # DEMO
 
-![demo](https://raw.github.com/wiki/lo-uis/hait_gukuoka_e/img/demo.png)
+![demo](https://raw.github.com/wiki/lo-uis/hait_fukuoka_e/img/demo.png)
 
 
 
