@@ -7,7 +7,7 @@ Twitterの#スタバなうをVGG16を転移学習させて判別してみる
 
 # DEMO
 
-![demo」(https://raw.github.com/wiki/lo-uis/img/demo.png)
+![demo](https://raw.github.com/wiki/lo-uis/img/demo.png)
 
 
 
