@@ -31,7 +31,7 @@ pip install requirement.txt
 ```bash
 cd hait_fukuoka_e
 cd app 
-!<and plz add weight file>!
+!!!and plz add weight file!!!
 python app.py
  * Serving Flask app "app" (lazy loading)
  * Environment: production
