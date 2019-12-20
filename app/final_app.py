@@ -43,7 +43,7 @@ app = Flask(__name__)
 @app.route('/')
 def index():
     name = "Hello World"
-    return render_template('final_index.html', title='flask test', name=name)
+    return render_template('index.html', title='flask test', name=name)
 
 ###########################
 # 以下画像アップロード処理
