@@ -20,6 +20,7 @@ Python3.X
 # Installation
 
 ```bash
+mkdir hoge
 cd hoge
 git clone https://github.com/lo-uis/hait_fukuoka_e.git
 cd hait_fukuoka_e
