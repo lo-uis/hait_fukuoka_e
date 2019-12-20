@@ -7,7 +7,7 @@ Twitterの#スタバなうをVGG16を転移学習させて判別してみる
 
 # DEMO
 
-"hoge"の魅力が直感的に伝えわるデモ動画や図解を載せる
+![demo](/Users/louis/Desktop/スクリーンショット\ 2019-12-20\ 16.42.45.png)
 
 
 
@@ -19,8 +19,6 @@ Python3.X
 
 # Installation
 
-
-
 ```bash
 cd hoge
 git clone https://github.com/lo-uis/hait_fukuoka_e.git
@@ -30,31 +28,33 @@ pip install requirement.txt
 
 # Usage
 
-DEMOの実行方法など、"hoge"の基本的な使い方を説明する
-
 ```bash
-git clone https://github.com/hoge/~
-cd examples
-python demo.py
+cd hait_fukuoka_e
+cd app 
+!<and plz add weight file>!
+python app.py
+ * Serving Flask app "app" (lazy loading)
+ * Environment: production
+   WARNING: This is a development server. Do not use it in a production deployment.
+   Use a production WSGI server instead.
+ * Debug mode: on
+ * Running on http://127.0.0.1:8000/ (Press CTRL+C to quit)
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 201-867-161
+ !!!!Click the URL and send various image!!!
 ```
 
 # Note
 
-[重みはここからDL](https://drive.google.com/open?id=16MmttlWDlqEvNuWJB1yoUIYjw7Ils_nc)
+[weight](https://drive.google.com/open?id=16MmttlWDlqEvNuWJB1yoUIYjw7Ils_nc)
 
 # Author
 
-作成情報を列挙する
-
-* 作成者
-* 所属
-* E-mail
+[lo-uis](https://github.com/lo-uis)
+[joumoridaiki](https://github.com/joumoridaiki)
 
 # License
-ライセンスを明示する
+ぴえん
 
-"hoge" is under [MIT license](https://en.wikipedia.org/wiki/MIT_License).
-
-社内向けなら社外秘であることを明示してる
-
-"hoge" is Confidential.
+```🥺
