@@ -23,7 +23,7 @@ Python3.X
 cd hoge
 git clone https://github.com/lo-uis/hait_fukuoka_e.git
 cd hait_fukuoka_e
-pip install requirement.txt
+pip install -r requirement.txt
 ```
 
 # Usage
