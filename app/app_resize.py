@@ -66,11 +66,7 @@ def index():
     name = "Hello World"
     return render_template('index.html', title='flask test', name=name)
 
-###########################
-# 以下画像アップロード処理
-##########################
 
-#iPhoneの画像ファイル形式への対応
 
 #画像アップロード
 UPLOAD_FOLDER = './static/asset/uploads'
@@ -121,6 +117,6 @@ def uploaded_file(filename):
     return send_from_directory(app.config['UPLOAD_FOLDER'], filename)
 
 
-## おまじない
+
 if __name__ == "__main__":
     app.run(port=8000, debug=True)
