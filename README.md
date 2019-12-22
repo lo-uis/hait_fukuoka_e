@@ -56,5 +56,9 @@ python app.py
 
 [joumoridaiki](https://github.com/joumoridaiki)
 
+[momojits](https://github.com/momojits)
+
+[KOHEI199949](https://github.com/KOHEI199949)
+
 # License
 
